@@ -34,7 +34,7 @@ GetStrikeAndBall함수에 인자로 strike와 ball을 추가로 받아서 (tempS
 
 Tabulation 방식으로 개선한 **Number_Baseball_tabulation_multipletry.py**  
 SBlist.pkl 파일에 0123으로 예측한 strike와 ball에 따른 경우의 수를 미리 계산하여 저장해서 수행 시간을 단축함.  
-첫 추측은 어떤 수로 하던 평균적으로 무의미하기 때문에 0123으로 고정하여 제일 실행시간이 긴 첫 시도 부분을 스킵 가능.  
+첫 추측은 어떤 수로 하던 평균적으로 무의미하기 때문에 0123으로 고정하여 제일 실행시간이 긴 첫 시도 부분을 스킵 가능하다는 것을 활용.  
 
 
 ## Performance
@@ -61,7 +61,8 @@ Maximun Execution Time: 0.039708
 Minimun Execution Time: 0.011887 
 
 도쿄대 Tetsuro Tanaka 에 의해 minimum expected game length 가 5.213 이라는 것이 수학적으로 증명됨.  
-따라서 Execution Time을 줄이는 방향으로 개선함.
+따라서 Execution Time을 줄이는 방향으로 개선함.  
+**자세한 결과는 result.xls 참고**
 
 ## Requirment
  사용한 모듈: itertools, random, time, pickle  
